@@ -5,25 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neon Wave Fest</title>
     <style>
-        /* 1. RESET Y ESTILOS GENERALES */
+        /* Estilos generales y fondo negro obligado para el email */
         body {
-            background-color: #000000;
-            color: #ffffff;
+            background-color: #000000 !important;
+            color: #ffffff !important;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             text-align: center;
         }
 
-        /* 2. CONTENEDOR PRINCIPAL (Fija un ancho máximo de 600px para que no se estire demasiado en PC) */
+        /* Contenedor central principal de 600px */
         .contenedor {
             max-width: 600px;
+            width: 100%;
             margin: 0 auto;
             padding: 20px 10px;
             text-align: center;
         }
 
-        /* 3. HEADER (Logo e imagen del festival) */
+        /* Header */
         header {
             text-align: center;
             margin-bottom: 20px;
@@ -44,19 +45,25 @@
             border-radius: 8px;
         }
 
-        /* 4. TEXTOS Y FECHAS */
+        /* Textos y títulos */
+        main {
+            text-align: center;
+        }
+
         h1 {
             color: #ffffff;
             font-family: 'Trebuchet MS', Arial, sans-serif;
             font-size: 22px;
             margin: 15px 0 10px 0;
+            text-align: center;
         }
 
         h4.fecha {
-            color: #ea00ff; /* Rosa neón */
+            color: #ea00ff;
             font-family: 'Trebuchet MS', Arial, sans-serif;
             font-size: 15px;
             margin: 5px 0;
+            text-align: center;
         }
 
         h5.ubicacion {
@@ -64,22 +71,23 @@
             font-family: 'Trebuchet MS', Arial, sans-serif;
             font-size: 12px;
             margin: 5px 0 25px 0;
+            text-align: center;
         }
 
-        /* 5. SECCIÓN ARTISTAS */
+        /* Sección Artistas */
         .artistas-titulo {
-            color: #00ffff; /* Cian neón */
+            color: #00ffff;
             text-decoration: underline;
             font-family: sans-serif;
             font-size: 18px;
             margin-bottom: 15px;
+            text-align: center;
         }
 
         .artistas-contenedor {
             text-align: center;
         }
 
-        /* Usamos 'display: inline-block' para poner las fotos de los artistas en fila horizontal */
         .artista-card {
             display: inline-block;
             text-align: center;
@@ -93,6 +101,7 @@
             object-fit: cover;
             border-radius: 8px;
             display: block;
+            margin: 0 auto;
         }
 
         .artista-card p {
@@ -100,9 +109,10 @@
             font-family: sans-serif;
             font-size: 13px;
             margin: 5px 0 0 0;
+            text-align: center;
         }
 
-        /* 6. CAJA DE DESCUENTO */
+        /* Sección Descuento */
         .descuento {
             border: 2px dashed #009b9b;
             border-radius: 10px;
@@ -117,6 +127,7 @@
             font-family: 'Trebuchet MS', Arial, sans-serif;
             margin: 2px 0;
             font-size: 12px;
+            text-align: center;
         }
 
         .descuento h3 {
@@ -129,11 +140,12 @@
             margin: 6px 0 2px 0;
             font-size: 20px;
             font-weight: bold;
+            text-align: center;
         }
 
-        /* 7. BOTÓN DE COMPRA */
+        /* Botón de Compra */
         .boton-compra {
-            background-color: #ca0e75; /* Fucsia neón */
+            background-color: #ca0e75;
             color: #ffffff;
             border-radius: 10px;
             padding: 14px 28px;
@@ -143,9 +155,10 @@
             text-decoration: none;
             display: inline-block;
             margin: 25px 0;
+            text-align: center;
         }
 
-        /* 8. FOOTER Y REDES SOCIALES */
+        /* Footer */
         footer {
             margin-top: 30px;
             text-align: center;
@@ -158,6 +171,13 @@
             font-weight: bold;
             margin-bottom: 8px;
             font-family: sans-serif;
+            text-align: center;
+        }
+
+        .redes-links {
+            color: #33334d;
+            font-family: sans-serif;
+            text-align: center;
         }
 
         .redes-links a {
@@ -177,10 +197,12 @@
             font-size: 10px;
             margin-top: 30px;
             font-family: sans-serif;
+            text-align: center;
         }
 
         .footer-info p {
             margin: 3px 0;
+            text-align: center;
         }
     </style>
 </head>
@@ -189,15 +211,12 @@
     <!-- Contenedor principal centrado -->
     <div class="contenedor">
 
-        <!-- Cabecera: Logo e imagen principal -->
         <header>
-            <!-- RECUERDA: Cambia estos enlaces por los de GitHub Pages de tus imágenes -->
             <img class="logo" src="https://epozo07.github.io/Imagenes-Neon1/img/Modern_vector_logo_for_a_music_festival_named_ALIBABAFEST_el.jpg" alt="Logo">
             <img class="principal" src="https://epozo07.github.io/Imagenes-Neon1/img/Vibrant_music_festival_stage_at_night_with_huge_neon_light_s.jpg" alt="Imagen Principal">
         </header>
 
         <main>
-            <!-- Información principal del festival -->
             <h1>LAS NOCHES MÁS JÓVENES DEL AÑO</h1>
             <h4 class="fecha">12, 13 Y 14 DE JULIO 2026 • DESDE LAS 19:00H HASTA LAS 5:00H</h4>
             <h5 class="ubicacion">Roig Arena -- Calle del Bomber Ramon Duart, 12</h5>
@@ -205,7 +224,6 @@
             <section>
                 <h2 class="artistas-titulo">ARTISTAS</h2>
                 
-                <!-- Tarjetas de los 3 artistas en línea -->
                 <div class="artistas-contenedor">
                     <div class="artista-card">
                         <img src="https://epozo07.github.io/Imagenes-Neon1/img/Anuel.webp" alt="Anuel AA">
@@ -222,19 +240,16 @@
                 </div>
             </section>
 
-            <!-- Sección del Código de Descuento -->
             <section class="descuento">
                 <h4>CÓDIGO DE DESCUENTO -- 20% EN TU ENTRADA</h4>
                 <h3>NEON20</h3>
             </section>
             
-            <!-- Botón de compra -->
             <section>
                 <a href="#" class="boton-compra">COMPRAR ENTRADAS</a>
             </section>
         </main>
 
-        <!-- Pie de página -->
         <footer>
             <div class="redes-links">
                 <p class="redes-titulo">SÍGUENOS</p>
@@ -244,7 +259,7 @@
             </div>
 
             <div class="footer-info">
-                <p>Has recibido este email porque te suscribiste a Neon Wave Fest</p>
+                <p>Has recibido este email porque te suscribiste a AlibabaFest Festival</p>
                 <p>Roig Arena -- Calle del Bomber Ramon Duart, 12</p>
             </div>
         </footer>
