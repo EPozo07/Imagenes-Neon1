@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Festival</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Contenedor central */
+        .contenedor {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header img.logo {
+            max-width: 220px;
+            height: auto;
+            display: block;
+            margin: 0 auto 15px auto;
+        }
+
+        header img.principal {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+
+        /* Títulos y textos principales */
+        main {
+            text-align: center;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            font-size: 22px;
+            margin: 15px 0 10px 0;
+        }
+
+        h4.fecha {
+            color: #ea00ff;
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            font-size: 15px;
+            margin: 5px 0;
+        }
+
+        h5.ubicacion {
+            color: #888888;
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            font-size: 12px;
+            margin: 5px 0 25px 0;
+        }
+
+        /* Sección Artistas */
+        .artistas-titulo {
+            color: #00ffff;
+            text-decoration: underline;
+            font-family: sans-serif;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .artistas-contenedor {
+            text-align: center;
+        }
+
+        .artista-card {
+            display: inline-block;
+            text-align: center;
+            margin: 5px 8px;
+            vertical-align: top;
+        }
+
+        .artista-card img {
+            width: 130px;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .artista-card p {
+            color: #ffffff;
+            font-family: sans-serif;
+            font-size: 13px;
+            margin: 5px 0 0 0;
+        }
+
+        /* Sección Descuento */
+        .descuento {
+            border: 2px dashed #009b9b;
+            border-radius: 10px;
+            padding: 12px 20px;
+            max-width: 320px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .descuento h4 {
+            color: #ea00ff;
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            margin: 2px 0;
+            font-size: 12px;
+        }
+
+        .descuento h3 {
+            color: #000000;
+            background-color: #00ffff;
+            display: inline-block;
+            padding: 4px 15px;
+            border-radius: 5px;
+            font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+            margin: 6px 0 2px 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Botón de Compra */
+        .boton-compra {
+            background-color: #ca0e75;
+            color: #ffffff;
+            border-radius: 10px;
+            padding: 14px 28px;
+            font-size: 15px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            margin: 25px 0;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .redes-titulo {
+            color: #7b9ed8;
+            font-size: 11px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            font-family: sans-serif;
+        }
+
+        .redes-links {
+            color: #33334d;
+            font-family: sans-serif;
+        }
+
+        .redes-links a {
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            margin: 0 5px;
+            font-family: sans-serif;
+        }
+
+        .link-instagram { color: #ff007f; }
+        .link-tiktok { color: #00ffcc; }
+        .link-x { color: #8a2be2; }
+
+        .footer-info {
+            color: #7b9ed8;
+            font-size: 10px;
+            margin-top: 30px;
+            font-family: sans-serif;
+        }
+
+        .footer-info p {
+            margin: 3px 0;
+        }
+    </style>
+</head>
+<body> 
+
+    <!-- Contenedor principal centrado -->
+    <div class="contenedor">
+
+        <!--Creamos la cabecera con el logo y la imagen principal de la página-->
+        <header>
+            <img class="logo" src="https://imgpile.com/m/vLHkA6r" alt="Logo">
+            <img class="principal" src="https://imgur.com/a8pLr4Q" alt="Imagen Principal">
+        </header>
+
+        <main>
+            <!--Añadimos la información principal para el receptor del email.-->
+            <h1>LAS NOCHES MÁS JÓVENES DEL AÑO</h1>
+            <h4 class="fecha">12, 13 Y 14 DE JULIO 2027 • DESDE LAS 19:00H HASTA LAS 5:00H</h4>
+            <h5 class="ubicacion">Roig Arena -- Calle del Bomber Ramon Duart, 12</h5>
+
+            <section>
+                <!--Creamos las 3 fotos para los artistas y lo ponemos en línea para que sea más visible.-->
+                <h2 class="artistas-titulo">ARTISTAS</h2>
+                
+                <div class="artistas-contenedor">
+                    <div class="artista-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2NwuVKgbdN2tCDtFpGoGARut_oHGRW8b94aYIveQ7Xg&s=10" alt="Anuel AA">
+                        <p>Anuel AA</p>
+                    </div>
+                    <div class="artista-card">
+                        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400" alt="La Pantera">
+                        <p>La Pantera</p>
+                    </div>
+                    <div class="artista-card">
+                        <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=400" alt="Lucho RK">
+                        <p>Lucho RK</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="descuento">
+                <!--Creamos el código de descuento y lo ponemos en un recuadro-->
+                <h4>CÓDIGO DE DESCUENTO -- 20% EN TU ENTRADA</h4>
+                <h3>NEON20</h3>
+            </section>
+            
+            <section>
+                <!--Añadimos el botón de comprar las entradas-->
+                <a href="#" class="boton-compra">COMPRAR ENTRADAS</a>
+            </section>
+        </main>
+
+        <footer>
+            <div class="redes-links">
+                <!--Creamos el pie de página para que nos sigan en las redes sociales.-->
+                <p class="redes-titulo">SÍGUENOS</p>
+                <a href="#" class="link-instagram">INSTAGRAM</a> |
+                <a href="#" class="link-tiktok">TIKTOK</a> |
+                <a href="#" class="link-x">X</a> 
+            </div>
+
+            <div class="footer-info">
+                <!--Creamos un mensaje para recordar la dirección y el porque le ha llegado el email.-->
+                <p>Has recibido este email porque te suscribiste a AlibabaFest Festival</p>
+                <p>Roig Arena -- Calle del Bomber Ramon Duart, 12</p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
